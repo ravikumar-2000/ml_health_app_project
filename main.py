@@ -50,9 +50,9 @@ class MentalDisorderRequestBody(BaseModel):
 
 
 class SentimentMessageRequestBody(BaseModel):
-    sender_id: int
+    sender_id: str
     message: str
-    is_bot: int
+    is_bot: bool
     timestamp: datetime
 
 
@@ -77,7 +77,7 @@ def get_sentiment_analysis_report(request_body: List[SentimentMessageRequestBody
     }
     for req_body in request_body:
         req_body = req_body.dict()
-        if req_body["is_bot"] == 0:
+        if req_body["is_bot"]:
             scores = sentiment_vader(req_body["message"])
             if scores[-2] >= 0.05:
                 overall_status["positive"] += 1
