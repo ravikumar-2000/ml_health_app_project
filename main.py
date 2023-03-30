@@ -69,7 +69,11 @@ def get_mental_disorder_status(request_body: MentalDisorderRequestBody):
 
 @app.post("/get-sentiment-analysis-status", status_code=status.HTTP_200_OK)
 def get_sentiment_analysis_report(request_body: List[SentimentMessageRequestBody]):
-    final_result = dict()
+    final_result = {
+        'positive': 0,
+        'negative': 0,
+        "neutral": 0,
+    }
     overall_status = {
         "positive": 0,
         "negative": 0,
@@ -85,9 +89,10 @@ def get_sentiment_analysis_report(request_body: List[SentimentMessageRequestBody
                 overall_status["negative"] += 1
             else:
                 overall_status["neutral"] += 1
-    final_result["positive"] = overall_status["positive"] / sum(overall_status.values())
-    final_result["negative"] = overall_status["negative"] / sum(overall_status.values())
-    final_result["neutral"] = overall_status["neutral"] / sum(overall_status.values())
+    if sum(overall_status.values()) > 0:
+        final_result["positive"] = overall_status["positive"] / sum(overall_status.values())
+        final_result["negative"] = overall_status["negative"] / sum(overall_status.values())
+        final_result["neutral"] = overall_status["neutral"] / sum(overall_status.values())
     return JSONResponse({"result": final_result})
 
 
