@@ -1,0 +1,834 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "How are you?",
+                "Good morning",
+                "Good afternoon",
+                "Good evening"
+            ],
+            "responses": [
+                "Hello! How can I help you today?",
+                "Hi! What can I do for you?",
+                "Hey! How can I assist you?",
+                "Hello there! How can I be of service?",
+                "Hi there! What brings you here today?",
+                "Good [morning/afternoon/evening]! How can I help you today?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Thank you",
+                "Thanks",
+                "Goodbye",
+                "Bye",
+                "See you later",
+                "Talk to you later"
+            ],
+            "responses": [
+                "You're welcome. Take care!",
+                "No problem. Be well!",
+                "Goodbye! Stay safe and take care.",
+                "Bye! Hope to talk to you soon.",
+                "See you later! Remember to take care of yourself.",
+                "Talk to you later! Remember that I'm here if you need me."
+            ]
+        },
+        {
+            "tag": "mental health",
+            "patterns": [
+                "I'm feeling down",
+                "I'm feeling depressed",
+                "I'm feeling anxious",
+                "I'm feeling stressed",
+                "I'm feeling overwhelmed",
+                "I'm feeling suicidal",
+                "I'm having panic attacks",
+                "I'm having trouble sleeping",
+                "I'm having nightmares",
+                "I'm feeling angry",
+                "I'm feeling sad",
+                "I'm feeling hopeless",
+                "I'm feeling helpless",
+                "I'm feeling worthless",
+                "I'm feeling guilty",
+                "I'm feeling ashamed"
+            ],
+            "responses": [
+                "I'm sorry to hear that. Can you tell me more about what's going on?",
+                "That sounds really tough. Would you like to talk about what's been bothering you?",
+                "I'm here for you. Can you tell me more about what you're feeling?",
+                "It's okay to feel the way you do. Let's talk about what's been on your mind.",
+                "I understand how you feel. Can you tell me more about what's been troubling you?",
+                "I'm here to listen. Would you like to talk about what's been weighing on you?",
+                "It takes a lot of courage to share your feelings. Can you tell me more about what's been going on?",
+                "I'm here to support you. Let's talk about what's been bothering you.",
+                "You don't have to go through this alone. Can you tell me more about what's been troubling you?",
+                "It's okay to not be okay. Let's talk about what's been going on for you.",
+                "Your feelings are valid. Can you tell me more about what's been on your mind?",
+                "You're not alone. Can you tell me more about what's been troubling you?",
+                "I'm here to help. Can you tell me more about what's been going on for you?",
+                "You're brave for sharing your feelings. Let's talk about what's been bothering you.",
+                "Your feelings matter. Can you tell me more about what's been weighing on you?"
+            ]
+        },
+        {
+            "tag": "medication",
+            "patterns": [
+                "I'm taking medication",
+                "I need medication",
+                "I'm not sure if my medication is working",
+                "I'm experiencing side effects from my medication",
+                "I'm afraid of taking medication",
+                "Can you prescribe medication?",
+                "Can you adjust my medication dosage?",
+                "How long does it take for medication to start working?",
+                "Can I stop taking my medication?",
+                "How can I manage medication withdrawal symptoms?"
+            ],
+            "responses": [
+                "It's important to take your medication as prescribed. Can you tell me more about how you're feeling?",
+                "Medication can be helpful, but it's important to be aware of potential side effects. Can you tell me more about what you're experiencing?",
+                "It's normal to have concerns about taking medication. Let's talk about what's been on your mind.",
+                "I can prescribe medication if it's appropriate for your treatment. Can you tell me more about what you're experiencing?",
+                "Adjusting your medication dosage may be necessary depending on your symptoms. Can you tell me more about how you're feeling?",
+                "It can take several weeks for medication to start working. Let's talk about what you can do in the meantime to manage your symptoms.",
+                "Stopping medication abruptly can be dangerous. Let's talk about how to safely taper off your medication if necessary.",
+                "Managing medication withdrawal symptoms can be challenging. Let's talk about strategies to make the process easier.",
+                "It's important to communicate any concerns about your medication with your healthcare provider. Can you tell me more about what's been going on?"
+            ]
+        },
+        {
+            "tag": "suicidal thoughts",
+            "patterns": [
+                "I'm having suicidal thoughts",
+                "I'm feeling hopeless",
+                "I don't want to live anymore",
+                "I'm afraid I might harm myself",
+                "I don't see a way out",
+                "I feel like a burden",
+                "I feel like everyone would be better off without me"
+            ],
+            "responses": [
+                "I'm here for you and I'm glad you reached out. Can you tell me more about what's been going on?",
+                "It takes a lot of courage to share these feelings. Your safety is my top priority. Have you thought about harming yourself?",
+                "It's understandable to feel hopeless, but there are people who care about you and want to help. Let's talk about what we can do to keep you safe.",
+                "Feeling like a burden can be overwhelming. You are not alone and there is hope for recovery. Let's talk about strategies to manage these thoughts.",
+                "I want to help you get the support you need. Can you tell me more about what you're experiencing?",
+                "It's important to take suicidal thoughts seriously. Can you tell me more about how you're feeling?",
+                "You don't have to go through this alone. Let's talk about what's been on your mind and how we can keep you safe.",
+                "I care about your wellbeing and want to help you get through this. Can you tell me more about what's been troubling you?",
+                "Your life has value and purpose, even if it doesn't feel like it right now. Let's talk about how to get you the support you need."
+            ]
+        },
+        {
+            "tag": "eating disorders",
+            "patterns": [
+                "I'm struggling with an eating disorder",
+                "I have a disordered relationship with food",
+                "I'm obsessed with my weight",
+                "I binge eat",
+                "I restrict my food intake",
+                "I feel guilty after eating",
+                "I have body image issues"
+            ],
+            "responses": [
+                "Eating disorders can be challenging to overcome, but recovery is possible. Can you tell me more about what you're experiencing?",
+                "It's important to seek treatment for an eating disorder. Let's talk about the options available to you.",
+                "Body image issues can be difficult to manage. Can you tell me more about how these thoughts are affecting you?",
+                "It's common to feel guilty after eating when struggling with an eating disorder. Let's talk about how to challenge these thoughts.",
+                "Binge eating and restricting are common symptoms of eating disorders. Let's talk about how to develop a healthier relationship with food.",
+                "I want to help you overcome your eating disorder. Can you tell me more about what you're experiencing?",
+                "Eating disorders can be accompanied by other mental health issues. Let's talk about how to address all of your concerns.",
+                "Your struggles with food and weight do not define you. Let's work together to overcome these challenges.",
+                "You deserve to have a healthy relationship with food and your body. Let's talk about how to achieve that."
+            ]
+        },
+        {
+            "tag": "trauma",
+            "patterns": [
+                "I've experienced trauma",
+                "I have PTSD",
+                "I'm having flashbacks",
+                "I feel like I'm reliving the trauma",
+                "I'm having nightmares",
+                "I'm avoiding certain situations or people",
+                "I'm on edge all the time"
+            ],
+            "responses": [
+                "Trauma can be difficult to cope with, but healing is possible. Can you tell me more about what you've experienced?",
+                "PTSD is a common response to trauma. Let's talk about the treatment options available to you.",
+                "Flashbacks and nightmares are common symptoms of PTSD. Let's talk about how to manage these symptoms.",
+                "Avoidance is a coping mechanism for many people who have experienced trauma. Let's talk about how to gradually confront the situations or people you're avoiding.",
+                "Feeling on edge or hyper vigilant is also a common symptom of PTSD. Let's talk about strategies to manage these feelings.",
+                "I'm here to support you as you navigate the challenges of trauma recovery. Can you tell me more about what you're experiencing?",
+                "You don't have to go through this alone. Let's talk about how to build a support network that can help you through the healing process.",
+                "Your trauma does not define you. Let's work together to help you heal and move forward.",
+                "It's normal to have a range of emotions after experiencing trauma. Let's talk about how to cope with these emotions in a healthy way."
+            ]
+        },
+        {
+            "tag": "depression",
+            "patterns": [
+                "I feel sad all the time",
+                "I have no energy",
+                "I can't concentrate",
+                "I'm not interested in anything anymore",
+                "I'm having trouble sleeping",
+                "I feel like a burden to others",
+                "I'm having thoughts of suicide"
+            ],
+            "responses": [
+                "Depression can be a challenging illness, but there are effective treatments available. Can you tell me more about how you're feeling?",
+                "It's important to seek help if you're experiencing symptoms of depression. Let's talk about the treatment options available to you.",
+                "Lack of energy, concentration, and interest in activities are all common symptoms of depression. Let's work together to address these symptoms.",
+                "Difficulty sleeping and feeling like a burden to others are also common symptoms of depression. Let's talk about how to manage these feelings.",
+                "If you're having thoughts of suicide, it's important to seek help immediately. You can also reach out to the National Suicide Prevention Lifeline at 1 800 273 TALK (8255).",
+                "I'm here to support you as you work through the challenges of depression. Can you tell me more about what you're experiencing?",
+                "Depression can be accompanied by other mental health issues. Let's talk about how to address all of your concerns.",
+                "It's important to remember that depression is an illness and not a personal weakness. Let's work together to help you overcome it.",
+                "Recovery from depression is possible. Let's talk about strategies to help you feel better and regain your sense of well being."
+            ]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": [
+                "I'm feeling anxious all the time",
+                "I have panic attacks",
+                "I'm avoiding certain situations because of anxiety",
+                "I'm constantly worrying",
+                "I feel like something bad is going to happen",
+                "I'm having trouble breathing",
+                "I'm having chest pain"
+            ],
+            "responses": [
+                "Anxiety can be a challenging condition to manage, but there are effective treatments available. Can you tell me more about what you're experiencing?",
+                "It's important to seek help if you're experiencing symptoms of anxiety. Let's talk about the treatment options available to you.",
+                "Panic attacks, avoidance, and constant worrying are all common symptoms of anxiety. Let's work together to address these symptoms.",
+                "Feeling like something bad is going to happen and physical symptoms like trouble breathing and chest pain can also be symptoms of anxiety. Let's talk about how to manage these feelings.",
+                "I'm here to support you as you navigate the challenges of anxiety. Can you tell me more about what you're experiencing?",
+                "Anxiety can be accompanied by other mental health issues. Let's talk about how to address all of your concerns.",
+                "It's important to remember that anxiety is a common and treatable condition. Let's work together to help you overcome it.",
+                "Recovery from anxiety is possible. Let's talk about strategies to help you feel more calm and in control."
+            ]
+        },
+        {
+            "tag": "bipolar disorder",
+            "patterns": [
+                "I have extreme mood swings",
+                "I have manic episodes",
+                "I have depressive episodes",
+                "I feel out of control",
+                "I have trouble sleeping",
+                "I have racing thoughts",
+                "I engage in reckless behavior"
+            ],
+            "responses": [
+                "Bipolar disorder can be challenging, but there are effective treatments available. Can you tell me more about your symptoms?",
+                "It's important to seek help if you're experiencing symptoms of bipolar disorder. Let's talk about the treatment options available to you.",
+                "Mood swings, manic episodes, and depressive episodes are all common symptoms of bipolar disorder. Let's work together to address these symptoms.",
+                "Trouble sleeping, racing thoughts, and engaging in reckless behavior can also be symptoms of bipolar disorder. Let's talk about how to manage these feelings.",
+                "I'm here to support you as you work through the challenges of bipolar disorder. Can you tell me more about what you're experiencing?",
+                "Bipolar disorder can be accompanied by other mental health issues. Let's talk about how to address all of your concerns.",
+                "It's important to remember that bipolar disorder is a treatable condition. Let's work together to help you find stability and balance.",
+                "Recovery from bipolar disorder is possible. Let's talk about strategies to help you feel more in control of your mood and behavior."
+            ]
+        },
+        {
+            "tag": "substance abuse",
+            "patterns": [
+                "I have a problem with drugs",
+                "I have a problem with alcohol",
+                "I can't stop using",
+                "I'm having withdrawal symptoms",
+                "My substance use is causing problems in my life",
+                "I'm worried about my substance use",
+                "I'm having trouble quitting"
+            ],
+            "responses": [
+                "Substance abuse can be a difficult problem to overcome, but there are effective treatments available. Can you tell me more about your substance use?",
+                "It's important to seek help if you're experiencing problems with substance abuse. Let's talk about the treatment options available to you.",
+                "Inability to stop using, withdrawal symptoms, and substance use causing problems in your life are all common symptoms of substance abuse. Let's work together to address these symptoms.",
+                "If you're worried about your substance use, it's important to take action. Let's talk about how to manage your concerns and work toward recovery.",
+                "I'm here to support you as you navigate the challenges of substance abuse. Can you tell me more about what you're experiencing?",
+                "Substance abuse can be accompanied by other mental health issues. Let's talk about how to address all of your concerns.",
+                "It's important to remember that recovery from substance abuse is possible. Let's work together to help you find freedom from addiction.",
+                "There are many strategies that can be effective in treating substance abuse. Let's talk about what might work best for you."
+            ]
+        },
+        {
+            "tag": "self esteem",
+            "patterns": [
+                "I don't feel good about myself",
+                "I feel like a failure",
+                "I have negative thoughts about myself",
+                "I compare myself to others and feel inferior",
+                "I have trouble accepting compliments",
+                "I feel like I'm not good enough"
+            ],
+            "responses": [
+                "It's common to struggle with self esteem, but it's possible to improve it. Can you tell me more about what's been going on?",
+                "There are many things you can do to improve your self esteem, such as focusing on your strengths and accomplishments. Let's talk about strategies that might work for you.",
+                "Negative thoughts about yourself can be very challenging. Let's work together to challenge these thoughts and help you feel better about yourself.",
+                "It's important to remember that your self worth is not determined by external factors. Let's talk about how to cultivate a more positive sense of self.",
+                "I'm here to support you as you work on improving your self esteem. Let's talk about what might be most helpful for you.",
+                "There are many strategies that can be effective in improving self esteem, such as practicing self compassion and setting realistic goals. Let's talk about what might work best for you."
+            ]
+        },
+        {
+            "tag": "obsessive compulsive",
+            "patterns": [
+                "I have obsessive thoughts",
+                "I feel like I have to perform certain actions or rituals",
+                "I feel like I'm not in control of my thoughts or actions",
+                "I spend a lot of time on certain tasks because of obsessive thoughts",
+                "I feel ashamed or embarrassed about my behaviors",
+                "I have trouble functioning because of my obsessive thoughts and behaviors"
+            ],
+            "responses": [
+                "Obsessive compulsive disorder can be very challenging, but there are effective treatments available. Can you tell me more about what you're experiencing?",
+                "Therapy, medication, and lifestyle changes can all be effective in treating obsessive compulsive disorder. Let's talk about the options available to you.",
+                "Obsessive thoughts and compulsive behaviors can be very distressing. Let's work together to address these symptoms and help you feel better."
+            ]
+        },
+        {
+            "tag": "body image",
+            "patterns": [
+                "I don't like my body",
+                "I feel like I'm too fat/thin",
+                "I feel like I'm not attractive",
+                "I'm afraid of gaining weight",
+                "I'm obsessed with my weight",
+                "I have a distorted view of my body"
+            ],
+            "responses": [
+                "Body image issues are very common, but they can be addressed. Let's talk about how to work towards a healthier self image.",
+                "Feeling like you're not attractive or that your body isn't the right size or shape can be difficult, but there are ways to challenge those thoughts. Let's work on reframing your thinking."
+            ]
+        },
+        {
+            "tag": "anger management",
+            "patterns": [
+                "I get angry easily",
+                "I have trouble controlling my temper",
+                "I lash out at others",
+                "I have physical symptoms when I'm angry",
+                "I feel like my anger is affecting my relationships",
+                "I have trouble expressing my anger in a healthy way"
+            ],
+            "responses": [
+                "Anger can be a difficult emotion to manage, but there are techniques you can learn to help you control your reactions. Let's talk about anger management strategies.",
+                "Feeling like you're out of control when you're angry can be scary, but there are ways to regain a sense of control. Let's work together to develop some coping skills.",
+                "Lashing out at others can have serious consequences. Let's talk about how to express your anger in a way that's assertive and respectful.",
+                "Physical symptoms like a racing heart, shaking, or sweating can be signs that your anger is getting the best of you. Let's talk about how to recognize and address those symptoms.",
+                "Anger can take a toll on relationships, but it's possible to repair and rebuild them. Let's talk about how to repair any damage and communicate more effectively.",
+                "Expressing your anger in a healthy way can be challenging, but it's possible to learn how to do so. Let's talk about some techniques that can help."
+            ]
+        },
+        {
+            "tag": "grief and loss",
+            "patterns": [
+                "I recently lost someone",
+                "I'm struggling with the death of a loved one",
+                "I can't stop thinking about someone who has passed away",
+                "I feel guilty about things I wish I had done differently",
+                "I don't know how to move forward",
+                "I feel like I'll never be happy again"
+            ],
+            "responses": [
+                "Grief and loss can be incredibly difficult, but there are ways to cope. Let's talk about some healthy ways to manage your grief.",
+                "Losing someone you love can be one of the most difficult experiences you'll go through. Let's talk about how to take care of yourself during this time.",
+                "Thinking about someone who has passed away is natural, but it can become overwhelming. Let's talk about strategies to help you cope with those thoughts and memories.",
+                "Guilt is a common emotion after losing someone, but it's important to remember that you did the best you could at the time. Let's talk about how to work through those feelings.",
+                "Moving forward after a loss can feel impossible, but it's possible to find hope and joy again. Let's talk about how to take small steps towards healing.",
+                "Feeling like you'll never be happy again can be a sign that you're in the midst of grief. Let's talk about how to work towards finding joy and meaning in your life again."
+            ]
+        },
+        {
+            "tag": "perfectionism",
+            "patterns": [
+                "I feel like I have to be perfect",
+                "I'm never satisfied with my accomplishments",
+                "I have trouble delegating tasks to others",
+                "I'm afraid of failure",
+                "I feel like I'm not good enough unless everything is perfect",
+                "I have trouble starting tasks because I'm afraid they won't be perfect"
+            ],
+            "responses": [
+                "Perfectionism can be a difficult mindset to overcome, but it's possible to learn to let go of unrealistic expectations. Let's talk about how to work towards a healthier perspective."
+            ]
+        },
+        {
+            "tag": "love failure",
+            "patterns": [
+                "I recently went through a breakup",
+                "I can't stop thinking about my ex",
+                "I feel heartbroken",
+                "I don't know how to move on",
+                "I feel like I'll never find love again",
+                "I'm afraid of being alone"
+            ],
+            "responses": [
+                "Breakups can be painful, but it's possible to heal and move on. Let's talk about ways to take care of yourself during this time.",
+                "It's normal to have a lot of thoughts and feelings after a breakup. Let's talk about ways to process those emotions and find closure.",
+                "Heartbreak can be a difficult experience, but it's possible to learn to manage those feelings and move forward. Let's talk about coping strategies.",
+                "Moving on after a breakup can be a challenging process, but it's possible to find love and happiness again. Let's talk about ways to open yourself up to new possibilities.",
+                "Feeling like you'll never find love again can be a discouraging thought, but it's possible to learn to cultivate a positive outlook on your future. Let's talk about ways to do that.",
+                "Fear of being alone can be a common concern after a breakup, but it's possible to learn to enjoy your own company and build a fulfilling life for yourself. Let's talk about how to do that."
+            ]
+        },
+        {
+            "tag": "making friends",
+            "patterns": [
+                "I have trouble making friends",
+                "I feel lonely and isolated",
+                "I don't know how to approach new people",
+                "I'm afraid of rejection",
+                "I feel like I don't fit in anywhere"
+            ],
+            "responses": [
+                "Making friends can be challenging, but there are strategies you can use to build new connections. Let's talk about some of those strategies.",
+                "Feeling lonely and isolated is a difficult experience, but it's possible to reach out and connect with others. Let's talk about ways to do that.",
+                "Approaching new people can be nerve wracking, but it's possible to build confidence and learn to make connections. Let's talk about ways to do that.",
+                "Fear of rejection can be a common concern when making new friends, but it's possible to learn to manage those fears and build healthy relationships. Let's talk about ways to do that.",
+                "Feeling like you don't fit in anywhere can be a discouraging thought, but it's possible to find groups and communities where you feel like you belong. Let's talk about ways to explore those options."
+            ]
+        },
+        {
+            "tag": "toxic friendships",
+            "patterns": [
+                "I have a friend who is always negative",
+                "My friend is constantly putting me down",
+                "I feel drained after spending time with my friend",
+                "My friend is always taking advantage of me",
+                "I'm not sure how to end a toxic friendship"
+            ],
+            "responses": [
+                "Toxic friendships can be damaging to your mental health, but it's possible to learn to set boundaries and protect yourself. Let's talk about ways to do that.",
+                "Negative friends can bring you down, but it's possible to learn to surround yourself with more positive influences. Let's talk about ways to do that.",
+                "Feeling drained after spending time with a friend is a sign that the friendship may be unhealthy. Let's talk about ways to evaluate your relationships and prioritize your well being.",
+                "Friends who take advantage of you can be difficult to deal with, but it's possible to learn to assert yourself and protect your boundaries. Let's talk about ways to do that.",
+                "Ending a toxic friendship can be challenging, but it's possible to learn to do it in a respectful and healthy way. Let's talk about ways to approach that conversation."
+            ]
+        },
+        {
+            "tag": "sexual orientation",
+            "patterns": [
+                "I'm confused about my sexual orientation",
+                "I'm attracted to people of the same gender and it's causing me distress",
+                "I'm not sure if I'm bisexual or just curious",
+                "I'm worried about coming out to my friends and family",
+                "I'm questioning my sexuality"
+            ],
+            "responses": [
+                "Exploring your sexual orientation can be a challenging experience, but it's important to remember that there is no right or wrong way to identify. Let's talk about ways to explore your feelings and come to a better understanding of yourself.",
+                "Feeling distress about your sexual attraction can be a difficult experience, but it's possible to find support and acceptance. Let's talk about ways to connect with supportive communities and resources.",
+                "It's common to question your sexual orientation, and it's okay to take your time to figure out what feels right for you. Let's talk about ways to explore your feelings and gain a better understanding of your identity.",
+                "Coming out can be a challenging experience, but it's possible to find support and acceptance from the people you care about. Let's talk about ways to approach those conversations and build a support network.",
+                "Questioning your sexuality is a normal part of self discovery, and it's important to approach the process with patience and self compassion. Let's talk about ways to work through your feelings and gain clarity about your identity."
+            ]
+        },
+        {
+            "tag": "sexual dysfunction",
+            "patterns": [
+                "I'm experiencing erectile dysfunction",
+                "I have trouble reaching orgasm",
+                "I'm not interested in sex",
+                "I'm experiencing pain during sex",
+                "I'm worried that there's something wrong with me sexually"
+            ],
+            "responses": [
+                "Sexual dysfunction can be a distressing experience, but it's important to remember that there are many possible causes and treatments. Let's talk about ways to address your concerns and improve your sexual health.",
+                "Trouble reaching orgasm or experiencing pain during sex can be signs of underlying physical or psychological issues. Let's talk about ways to evaluate your symptoms and connect with appropriate medical care.",
+                "Not feeling interested in sex can be a normal experience at certain times in your life, but it's important to explore the underlying reasons and consider whether there are changes you want to make. Let's talk about ways to evaluate your feelings and make healthy choices for yourself.",
+                "Pain during sex can be a sign of underlying physical issues or psychological factors, such as anxiety or trauma. Let's talk about ways to explore your symptoms and connect with appropriate medical and psychological care.",
+                "Worrying that something is wrong with you sexually can be a distressing experience, but it's important to remember that there is a wide range of normal sexual experience. Let's talk about ways to address your concerns and build a healthier relationship with your sexual self."
+            ]
+        },
+        {
+            "tag": "academic stress",
+            "patterns": [
+                "I'm feeling overwhelmed with schoolwork",
+                "I'm struggling to keep up with my classes",
+                "I'm worried about failing my exams",
+                "I'm not sure how to study effectively",
+                "I feel like I'm not smart enough for school"
+            ],
+            "responses": [
+                "Academic stress can be challenging, but there are ways to manage it. Let's talk about strategies for time management, study skills, and stress reduction.",
+                "It's normal to feel overwhelmed with schoolwork at times. Let's work together to create a plan that can help you feel more in control and confident in your abilities.",
+                "Failing exams can be discouraging, but it's important to remember that it's not a reflection of your intelligence. Let's talk about ways to improve your study habits and build your confidence.",
+                "Everyone learns differently, and there's no one size fits all approach to studying. Let's explore different study techniques and find what works best for you.",
+                "Feeling like you're not smart enough for school is a common fear, but it's important to recognize that intelligence is not fixed. Let's talk about ways to build your self esteem and confidence in your academic abilities."
+            ]
+        },
+        {
+            "tag": "bullying",
+            "patterns": [
+                "I'm being bullied at school",
+                "I feel like I'm being excluded from my friend group",
+                "I'm being harassed by another student",
+                "I'm afraid to go to school because of the bullying",
+                "I'm not sure how to stand up for myself"
+            ],
+            "responses": [
+                "Bullying can be a serious issue, and it's important to reach out for help. Let's talk about ways to report the bullying and find support from adults or friends.",
+                "Feeling excluded from your friend group can be hurtful. Let's explore ways to communicate with your friends and find ways to build new relationships.",
+                "Harassment is not okay, and it's important to talk to someone about what's happening. Let's talk about ways to report the behavior and find support.",
+                "It's understandable to feel afraid to go to school when you're being bullied. Let's work together to create a safety plan and find ways to build your confidence.",
+                "Standing up for yourself can be difficult, but there are strategies you can use to assert your boundaries and protect yourself. Let's talk about ways to communicate effectively and advocate for yourself."
+            ]
+        },
+        {
+            "tag": "procrastination",
+            "patterns": [
+                "I'm having trouble starting my assignments",
+                "I keep putting off my homework",
+                "I'm easily distracted when I'm trying to study",
+                "I feel like I'm always cramming at the last minute",
+                "I'm not sure how to break the cycle of procrastination"
+            ],
+            "responses": [
+                "Procrastination can be a tough habit to break, but it's possible. Let's talk about ways to set achievable goals, create a schedule, and overcome distractions.",
+                "Starting assignments can be challenging, especially when you feel overwhelmed. Let's work together to break down the task into manageable steps and find ways to build momentum.",
+                "Distractions can make it hard to focus on schoolwork. Let's explore ways to minimize distractions, such as using productivity apps or finding a quiet study space."
+            ]
+        },
+        {
+            "tag": "loss of motivation",
+            "patterns": [
+                "I'm not motivated to train anymore",
+                "I feel like I've hit a plateau in my performance",
+                "I'm not enjoying the sport like I used to",
+                "I'm not sure why I'm playing this sport anymore",
+                "I feel like I'm not making progress"
+            ],
+            "responses": [
+                "It's common to feel a loss of motivation in sports. Let's talk about ways to reignite your passion for the sport and set new goals to work towards.",
+                "Plateaus in performance are normal in sports, but it doesn't mean you're not making progress. Let's talk about ways to assess your strengths and weaknesses and find new strategies to improve.",
+                "It's okay to take a break from a sport if you're not enjoying it anymore. Let's explore other activities that you might be interested in or find ways to make the sport more enjoyable for you.",
+                "It's important to understand your motivations for playing a sport. Let's talk about why you started playing and what you hope to get out of it. We can then find ways to align your goals with your motivations.",
+                "Feeling like you're not making progress can be discouraging, but it's important to recognize that progress is not always linear. Let's explore ways to measure progress beyond just performance, such as building new skills or developing mental toughness."
+            ]
+        },
+        {
+            "tag": "injury",
+            "patterns": [
+                "I've suffered an injury and can't play anymore",
+                "I'm afraid of getting injured again",
+                "My injury is taking longer to heal than I thought",
+                "I'm not sure how to stay involved in the sport while I'm injured",
+                "I'm worried that my injury will affect my performance"
+            ],
+            "responses": [
+                "Injuries can be frustrating, but it's important to prioritize your health and safety. Let's talk about ways to support your physical and emotional recovery and find alternative ways to stay involved in the sport.",
+                "Fear of getting injured again is normal after experiencing an injury. Let's explore ways to reduce the risk of injury, such as proper warm up and conditioning, and find ways to build your confidence.",
+                "Healing from an injury can take time, and it's important to be patient and take the necessary steps for recovery. Let's talk about ways to stay positive and focus on the aspects of the sport that you can still participate in.",
+                "Being injured doesn't mean you can't stay involved in the sport. Let's explore ways to support your team or participate in other ways, such as coaching or volunteering.",
+                "It's natural to worry about the impact of an injury on your performance. Let's talk about ways to adapt your training and focus on other aspects of the sport that you can work on while recovering."
+            ]
+        },
+        {
+            "tag": "performance anxiety",
+            "patterns": [
+                "I get nervous before competitions",
+                "I'm afraid of letting my team down",
+                "I'm not performing as well as I know I can",
+                "I'm not sure how to deal with the pressure of the sport",
+                "I'm struggling to stay focused during competitions"
+            ],
+            "responses": [
+                "Performance anxiety is common in sports, but there are ways to manage it. Let's talk about relaxation techniques, visualization, and positive self talk.",
+                "Feeling pressure to perform well for your team can be stressful, but it's important to remember that sports are a team effort."
+            ]
+        },
+        {
+            "tag": "health concerns",
+            "patterns": [
+                "I'm dealing with a health condition that's affecting my performance",
+                "I'm not sure if I'm physically fit enough to play the sport",
+                "I'm worried about the impact of the sport on my health",
+                "I'm not sure how to manage my health condition while playing the sport",
+                "I'm struggling to balance my health and sports commitments"
+            ],
+            "responses": [
+                "It's important to prioritize your health when playing sports. Let's talk about ways to work with your doctor or a sports medicine specialist to manage your condition and minimize any risks.",
+                "Assessing your physical fitness and capabilities is important before starting a new sport. Let's talk about ways to get a proper assessment and build up your fitness level safely.",
+                "Being aware of the risks and potential impact of the sport on your health is important. Let's explore ways to minimize those risks and find alternative activities or modifications to the sport that can help support your health.",
+                "Managing a health condition while playing sports can be challenging, but it's possible with the right support and strategies. Let's talk about ways to communicate with your coach and team about your needs, and how to manage your condition during games and practices.",
+                "Balancing sports commitments and managing your health can be overwhelming. Let's talk about ways to prioritize your health and self care, and find strategies to manage your schedule and commitments."
+            ]
+        },
+        {
+            "tag": "lack of confidence",
+            "patterns": [
+                "I don't feel confident in my abilities",
+                "I'm not sure if I'm good enough to play at this level",
+                "I'm worried about what others think of my performance",
+                "I'm not sure how to overcome my fear of failure",
+                "I'm struggling to believe in myself"
+            ],
+            "responses": [
+                "Lack of confidence is common, but it's important to recognize your strengths and accomplishments. Let's explore ways to build your self esteem and develop a growth mindset.",
+                "It's normal to doubt your abilities, but it's important to give yourself credit for what you have achieved. Let's talk about ways to set achievable goals and track your progress, and find ways to celebrate your successes.",
+                "Worrying about what others think can be distracting and harmful to your confidence. Let's talk about ways to focus on your own performance and develop a positive self image.",
+                "Fear of failure can be paralyzing, but it's important to remember that failure is a natural part of the learning process. Let's explore ways to reframe failure as an opportunity for growth and find ways to overcome your fear.",
+                "Believing in yourself can be challenging, but it's important to practice self compassion and acknowledge your strengths. Let's talk about ways to challenge negative self talk and build a positive mindset."
+            ]
+        },
+        {
+            "tag": "communication with parents",
+            "patterns": [
+                "I'm having trouble communicating with my parents",
+                "I don't feel like my parents understand me",
+                "I'm not sure how to talk to my parents about sensitive topics",
+                "I feel like my parents are overbearing or controlling",
+                "I'm struggling to assert myself with my parents"
+            ],
+            "responses": [
+                "Communication with parents can be challenging, but it's important to express your thoughts and feelings. Let's explore ways to improve your communication skills and find strategies to have productive conversations with your parents.",
+                "Feeling misunderstood by parents is common, but it's important to find ways to bridge the communication gap. Let's talk about ways to express yourself effectively and find common ground with your parents.",
+                "Sensitive topics can be difficult to discuss, but it's important to have open and honest conversations with your parents. Let's explore ways to prepare for those conversations and find the right time and place to talk.",
+                "Feeling like your parents are overbearing or controlling can be frustrating, but it's important to understand their perspective and find ways to assert yourself. Let's talk about ways to set boundaries and negotiate with your parents.",
+                "Asserting yourself with parents can be challenging, but it's important to communicate your needs and desires. Let's explore ways to build your confidence and find strategies to have productive conversations with your parents."
+            ]
+        },
+        {
+            "tag": "parental pressure",
+            "patterns": [
+                "I feel like my parents are putting too much pressure on me",
+                "I'm struggling to meet my parents' expectations",
+                "I'm not sure how to handle my parents' high expectations",
+                "I'm feeling burnt out from the pressure my parents are putting on me",
+                "I feel like my parents' expectations are unrealistic"
+            ],
+            "responses": [
+                "Feeling pressure from parents can be overwhelming, but it's important to prioritize your own well being. Let's explore ways to manage your stress and find strategies to communicate your needs and limitations to your parents.",
+                "Struggling to meet parents' expectations is common, but it's important to communicate openly and honestly with them. Let's talk about ways to negotiate expectations and find ways to balance your priorities and goals with your parents'.",
+                "Handling high expectations from parents can be challenging, but it's important to be honest about what you can realistically achieve. Let's explore ways to communicate your limitations and find strategies to set achievable goals.",
+                "Burnout from parental pressure is common, but it's important to recognize your own limits and practice self care. Let's talk about ways to prioritize your well being and find strategies to communicate your needs to your parents.",
+                "Unrealistic expectations from parents can be demoralizing, but it's important to recognize your own strengths and limitations. Let's explore ways to set realistic goals and find strategies to communicate those goals to your parents."
+            ]
+        },
+        {
+            "tag": "verbal abuse from professor",
+            "patterns": [
+                "My professor has been verbally abusive towards me",
+                "My professor constantly belittles me in class",
+                "I feel uncomfortable speaking up in class because of my professor's verbal abuse",
+                "My professor has made derogatory comments towards me",
+                "My professor's behavior towards me feels discriminatory"
+            ],
+            "responses": [
+                "Verbal abuse from a professor is unacceptable. It's important to prioritize your well being and take steps to address this behavior. Let's talk about ways to document the abuse and find resources to help you address this issue.",
+                "Feeling belittled or uncomfortable in class because of a professor's behavior can be difficult. It's important to speak up and seek support. Let's explore ways to address this behavior and find strategies to advocate for yourself.",
+                "Feeling uncomfortable speaking up in class because of a professor's behavior is understandable. It's important to find resources to help you address this issue and prioritize your well being. Let's talk about ways to communicate your concerns and find strategies to manage your anxiety.",
+                "Derogatory comments from a professor are not acceptable. It's important to address this behavior and prioritize your well being. Let's explore ways to document the abuse and find resources to help you address this issue.",
+                "Discriminatory behavior from a professor is not acceptable. It's important to address this behavior and find support. Let's talk about ways to communicate your concerns and find strategies to advocate for yourself."
+            ]
+        },
+        {
+            "tag": "sexual harassment from professor",
+            "patterns": [
+                "My professor has been sexually harassing me",
+                "I feel uncomfortable around my professor because of their sexual advances",
+                "My professor's behavior towards me feels inappropriate",
+                "My professor has made unwelcome sexual comments towards me",
+                "I'm not sure how to handle my professor's sexual advances"
+            ],
+            "responses": [
+                "Sexual harassment from a professor is not acceptable. It's important to prioritize your well being and take steps to address this behavior. Let's talk about ways to document the harassment and find resources to help you address this issue.",
+                "Feeling uncomfortable around a professor because of their sexual advances is understandable. It's important to speak up and seek support. Let's explore ways to address this behavior and find strategies to advocate for yourself.",
+                "Feeling like a professor's behavior towards you is inappropriate can be difficult. It's important to prioritize your well being and find resources to help you address this issue. Let's talk about ways to communicate your concerns and find strategies to manage your anxiety.",
+                "Unwelcome sexual comments from a professor are not acceptable. It's important to address this behavior and prioritize your well being. Let's explore ways to document the harassment and find resources to help you address this issue.",
+                "Handling a professor's sexual advances can be challenging. It's important to prioritize your well being and find support. Let's talk about ways to communicate your boundaries and find strategies to advocate for yourself."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "Goodbye, take care!",
+                "See you later, have a great day!",
+                "Take care and stay well!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thanks a lot",
+                "Appreciate it"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Anytime!",
+                "No problem!"
+            ]
+        },
+        {
+            "tag": "failure task",
+            "patterns": [
+                "I failed at the task",
+                "I can't complete the task",
+                "I am not good at this task"
+            ],
+            "responses": [
+                "It's okay to fail sometimes. Everyone makes mistakes. Don't be too hard on yourself. Would you like some help with the task?",
+                "Don't worry. You can learn from your mistakes and try again. Do you want to discuss the task and see where you went wrong?",
+                "Failing at a task can be demotivating, but it's important to remember that failure is a part of the learning process. Let's see how we can turn this experience into a learning opportunity. Can you tell me more about what happened?"
+            ]
+        },
+        {
+            "tag": "overcoming failure",
+            "patterns": [
+                "How can I overcome my failure?",
+                "What can I do to succeed?",
+                "How do I get past my mistakes?"
+            ],
+            "responses": [
+                "It's important to learn from your mistakes and move forward. Think about what you can do differently next time to improve your chances of success. Would you like me to help you brainstorm some ideas?",
+                "Set realistic goals and break them down into manageable tasks. Celebrate small successes along the way, and don't give up. Failure is just a detour, not a dead end. You got this!",
+                "Remember that success is not just about achieving your goals, but also about the journey. Focus on your progress and keep moving forward, even if it's just a small step at a time."
+            ]
+        },
+        {
+            "tag": "self doubt",
+            "patterns": [
+                "I doubt my abilities",
+                "I don't think I can do it",
+                "I'm not good enough"
+            ],
+            "responses": [
+                "It's natural to have self doubt, but it's important not to let it hold you back. Remember your strengths and accomplishments, and focus on what you can do. Let's work together to build your confidence and overcome your doubts. What are some things you do well?",
+                "Your doubts do not define you. They are just thoughts, and you have the power to change them. Try to reframe your negative thoughts into positive ones, and challenge your assumptions. What evidence do you have that supports your doubts?",
+                "It's okay to ask for help when you need it. Don't be afraid to reach out to others for support and guidance. We all need help sometimes."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Appreciate it",
+                "Thanks a lot"
+            ],
+            "responses": [
+                "You're welcome!",
+                "No problem, happy to help!"
+            ]
+        },
+        {
+            "tag": "apology",
+            "patterns": [
+                "Sorry",
+                "My apologies",
+                "I'm sorry",
+                "Apologies"
+            ],
+            "responses": [
+                "No need to apologize.",
+                "It's okay, no harm done."
+            ]
+        },
+        {
+            "tag": "Teenager Negative Thinking",
+            "patterns": [
+                "Why do I always feel so down?",
+                "I feel like a failure all the time",
+                "Nothing ever goes right for me",
+                "I hate myself",
+                "I feel so worthless"
+            ],
+            "responses": [
+                "It sounds like you're going through a tough time. Would you like to talk about what's been bothering you?",
+                "I'm sorry to hear that you're feeling that way. Is there anything in particular that's been getting you down?",
+                "It can be hard to see the positive when things feel so negative. Have you tried talking to someone about how you're feeling?"
+            ]
+        },
+        {
+            "tag": "Teenager Negative Thinking",
+            "patterns": [
+                "Why do I always feel so down?",
+                "I feel like a failure all the time",
+                "Nothing ever goes right for me",
+                "I hate myself",
+                "I feel so worthless"
+            ],
+            "responses": [
+                "It sounds like you're going through a tough time. Would you like to talk about what's been bothering you?",
+                "I'm sorry to hear that you're feeling that way. Is there anything in particular that's been getting you down?",
+                "It can be hard to see the positive when things feel so negative. Have you tried talking to someone about how you're feeling?"
+            ]
+        },
+        {
+            "tag": "Teenager Negative Thinking Coping",
+            "patterns": [
+                "How can I stop negative thoughts?",
+                "What are some ways to feel better about myself?",
+                "I want to be more positive but I don't know how"
+            ],
+            "responses": [
+                "One way to cope with negative thoughts is to challenge them. Is there evidence to support your negative thoughts, or are they just assumptions?",
+                "It can be helpful to focus on the things you like about yourself or that you're good at. What are some positive qualities or achievements you're proud of?",
+                "Mindfulness and relaxation techniques can also be helpful for managing negative thoughts. Would you like to learn more about these techniques?"
+            ]
+        },
+        {
+            "tag": "Teenager Negative Thinking Relationships",
+            "patterns": [
+                "I feel like my friends don't like me",
+                "I'm scared that people will judge me",
+                "I always feel left out",
+                "I'm having trouble making new friends"
+            ],
+            "responses": [
+                "It's common to feel insecure about relationships at times. Have you talked to your friends about how you're feeling?",
+                "It's important to remember that everyone has insecurities, and people are often too wrapped up in their own lives to judge others. Have you tried to challenge your thoughts about what others think of you?",
+                "Making friends can be challenging, but it's important to keep putting yourself out there. Are there any clubs or groups you're interested in joining?"
+            ]
+        },
+        {
+            "tag": "breakup",
+            "patterns": [
+                "How do I deal with a breakup?",
+                "I just broke up with my partner, what should I do?",
+                "How can I move on from a breakup?"
+            ],
+            "responses": [
+                "Breakups are hard, but remember that time heals all wounds. It's important to give yourself time to process the breakup and take care of yourself. Talk to a trusted friend or a therapist, and focus on self-care activities like exercise, hobbies, or spending time with loved ones. It's also important to avoid stalking your ex on social media or dwelling on the past."
+            ]
+        },
+        {
+            "tag": "heartache",
+            "patterns": [
+                "Why does my heart ache after a breakup?",
+                "How can I stop feeling so heartbroken?",
+                "Is it normal to feel physical pain after a breakup?"
+            ],
+            "responses": [
+                "It's common to experience physical pain, such as aching or tightness in the chest, after a breakup. This is because emotional and physical pain are interconnected. The best way to cope with heartache is to take care of yourself both physically and mentally. Practice self-care activities like exercise, healthy eating, and getting enough sleep. Talking to a therapist or a trusted friend can also help you process your emotions."
+            ]
+        },
+        {
+            "tag": "moving_on",
+            "patterns": [
+                "How can I move on from a past relationship?",
+                "I'm having trouble letting go of my ex, what should I do?",
+                "How do I stop thinking about my ex?"
+            ],
+            "responses": [
+                "Moving on from a past relationship takes time and effort, but it's possible. Start by cutting off contact with your ex, including unfollowing them on social media and deleting their number. Focus on self-care activities like exercise, hobbies, and spending time with loved ones. It's also important to avoid romanticizing the past or dwelling on what could have been. Instead, focus on the present moment and what you can do to improve your future."
+            ]
+        }
+    ]
+}
