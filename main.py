@@ -16,7 +16,9 @@ from sentiment_analysis_pretrained import sentiment_vader
 
 
 try:
-    nltk.download('all')
+    # nltk.download('all')
+    nltk.download('stopwords')
+    nltk.download('punkt')
 except Exception as e:
     print(e)
 
