@@ -1,4 +1,5 @@
 import json
+import nltk
 import uvicorn
 import pandas as pd
 from consts import *
@@ -12,6 +13,13 @@ from disorder_prediction import predict_model
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sentiment_analysis_pretrained import sentiment_vader
+
+
+try:
+    nltk.download('all')
+except Exception as e:
+    print(e)
+
 
 app = FastAPI()
 app.add_middleware(
@@ -88,7 +96,7 @@ def get_sentiment_analysis_report(request_body: List[SentimentMessageRequestBody
     }
     for req_body in request_body:
         req_body = req_body.dict()
-        if req_body["is_bot"]:
+        if not req_body["is_bot"]:
             scores = sentiment_vader(req_body["message"])
             if scores[-2] >= 0.05:
                 overall_status["positive"] += 1
