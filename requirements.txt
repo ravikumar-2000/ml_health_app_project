@@ -3,7 +3,7 @@ fastapi
 uvicorn
 numpy
 tensorflow
-pickle
+pickle5
 json
 scikit-learn
 pandas
