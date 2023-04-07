@@ -19,6 +19,7 @@ try:
     # nltk.download('all')
     nltk.download('stopwords')
     nltk.download('punkt')
+    nltk.download('wordnet')
 except Exception as e:
     print(e)
 
