@@ -3,9 +3,6 @@ fastapi
 uvicorn
 numpy
 tensorflow
-pickle5
-json
 scikit-learn
 pandas
-pickle
 vaderSentiment
